@@ -1,0 +1,99 @@
+.footer__container-1 {
+  background-color: $medium-dark-grey;
+  height: 20rem;
+  @include flex(center, column);
+  padding: 0 2rem;
+  text-align: center;
+  margin-top: 3rem;
+  background-image: url(./assets/patterns/semi-circles.svg);
+  background-repeat: no-repeat;
+  background-position: 80% bottom;
+}
+
+.footer__container-1--header {
+  font-size: 2rem;
+  color: $white !important;
+}
+
+.footer__container-1 div:nth-child(2) {
+  @include grid;
+  max-width: 80%;
+  gap: 1rem;
+  p,
+  img {
+    height: 100%;
+  }
+}
+
+.footer__container-2 {
+  background-color: $very-dark-grey;
+  @include flex(center, column);
+  gap: 0;
+  text-align: center;
+  padding: 3rem 0;
+
+  .footer--logo img {
+    filter: brightness(10000%);
+  }
+}
+.footer__container-2--socials {
+  max-width: 30%;
+  ul {
+    @include flex(center, row);
+  }
+}
+
+a {
+  font: inherit;
+  color: $white;
+  text-decoration: none;
+}
+
+@include break-point(min-width, $tablet-sz) {
+  .footer__container-1 {
+    background-position: 0% 100%;
+    background-size: center;
+  }
+  .footer__container-1--header {
+    font-size: 3rem;
+  }
+  .footer__container-2 {
+    @include flex(center, row, 1rem, center);
+  }
+  .footer__container-2--pages,
+  footer ul,
+  .footer__container-2--socials {
+    @include flex(center, row, 1rem, center);
+  }
+  // footer
+  .footer__container-2--pages {
+    @include flex(center, row, 10rem, space-between);
+    font-size: 1.3rem;
+  }
+  .footer__container-2 {
+    @include flex(center, row, 1rem, space-around);
+    padding: 2rem 0;
+  }
+  footer ul {
+    margin-top: 0;
+  }
+}
+
+@include break-point(min-width, $desktop-sz) {
+  .footer__container-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: start;
+    padding-left: 7rem;
+    // background-image: url(./assets/patterns/semi-circles.svg);
+    // background-repeat: no-repeat;
+    background-position: 100% 100%;
+    & > p {
+      max-width: 70%;
+      text-align: left;
+    }
+    div:nth-child(2) {
+      display: flex;
+    }
+  }
+}

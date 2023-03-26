@@ -1,0 +1,84 @@
+.main-careers{
+    .about__section-2{
+        h2{
+            margin-top: 4.5rem;
+            font-size: 2rem;
+        }
+    }
+}
+.h2-container{
+
+
+.section-2__article-1--header{
+    font-size: 2rem;
+}
+
+}
+.careers-header{
+    .careers__header__container-2{
+        height: 8.5rem;
+        background-image: url(./assets/images/careers-location-hero-mobile.jpg);
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.section-apply{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+   
+    .article-apply{
+        display: flex;
+        justify-content: center;
+align-items: center;
+        flex-direction: column;
+        width: 80%;
+        max-width: 80%;
+        background-color: $light-blue-bg;
+        color: $text-dark-grey;
+        gap: 1rem;
+padding: 1.5rem 0;
+text-align: center;
+div{
+    p:nth-child(1){
+        font-weight: 900;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+    }
+}
+      
+        button{
+            width: 80%;
+        }
+    }
+}
+
+@include break-point(min-width, $tablet-sz){
+ .section-apply{
+    .article-apply{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       text-align: left;
+       padding: 1rem;
+       > div{
+       p{
+            margin-bottom: 0 !important;
+        }
+       }
+        button{
+            width: fit-content;
+            max-width: fit-content;
+            max-height: 2rem;
+        }
+    }
+ }
+}
+
+// about__section-2

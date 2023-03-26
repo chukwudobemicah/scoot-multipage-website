@@ -1,0 +1,21 @@
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 0.5rem 1.8rem;
+  height: 3rem;
+  background-color: $yellow;
+  border: none;
+  //   font-size: 1rem;
+  text-transform: capitalize;
+  color: $white;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: transparent;
+    color: $yellow;
+    cursor: pointer;
+    border: 2px solid $yellow;
+  }
+}

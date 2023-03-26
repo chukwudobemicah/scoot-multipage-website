@@ -1,0 +1,27 @@
+@mixin flex($align: center, $direction: row, $gap: 1rem, $justify: center) {
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin grid(
+  $align: center,
+  $grid-template-columns: 1fr 1fr,
+  $grid-template-rows: 1fr,
+  $justify: center
+) {
+  display: grid;
+  justify-content: $justify;
+  justify-items: $justify;
+  align-content: $align;
+  align-items: $align;
+  grid-template-columns: $grid-template-columns;
+  grid-template-rows: $grid-template-rows;
+}
+
+@mixin break-point($direction: min-width, $value: $tablet-sz) {
+  @media screen and ($direction: $value) {
+    @content;
+  }
+}

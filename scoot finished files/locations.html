@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Scoot</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+  <div class="overlay hidden"></div>
+  <div class="header__container-1">
+    <div class="hamburger-container">
+      <div class="hamburger-btn"></div>
+    </div>
+    <img src="./styles/assets/images/logo.svg" alt="scoot logo">
+    <nav class="translate-left">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="careers.html">Careers</a></li>
+      </ul>
+      <div><button>Get Scootin</button></div>
+    </nav>
+  </div>
+  <div class="location__header__container-1">
+    <h1>Locations</h1>
+  </div>
+  </div>
+  <main class="location-main">
+    <picture>
+      <source media="(max-width:599px)" srcset="./styles/assets/images/world-map-mobile.png">
+      <source media="(min-width:600px)" srcset="./styles/assets/images/world-map-tablet.png">
+      <source media="(min-width:1000px)" srcset="./styles/assets/images/world-map-desktop.png">
+      <img src="./styles/assets/images/world-map-mobile.png" alt="world-map">
+    </picture>
+    <section class="location-section">
+      <article class="location-section__article-1">
+        <ul>
+          <li>New York</li>
+          <li>London</li>
+          <li>Jakarta</li>
+          <li>Yokohama</li>
+        </ul>
+      </article>
+
+      <article class="location-section__article-2">
+        <div class="mask-container">
+          <h2 class="mask-element">Your city not listed?</h2>
+        </div>
+        <div>
+          If you’d like to see Scoot in your hometown, be sure to let us know. We track
+          requests and plan launches based on demand. Feel free to message us by clicking
+          the link or messaging us on social.</div>
+        <button>Message Us</button>
+      </article>
+    </section>
+
+
+
+  </main>
+
+  <footer>
+    <div class="footer__container-1">
+      <p class="footer__container-1--header"> Sign up and Scoot off today</p>
+      <div>
+        <p><img src="./styles/assets/icons/app-store.svg" alt="app-store img"></p>
+        <p><img src="./styles/assets/icons/google-play.svg" alt="google-play img"></p>
+      </div>
+    </div>
+    <div class="footer__container-2">
+      <p class="footer--logo"><img src="./styles/assets/images/logo.svg" alt=""></p>
+
+      <div class="footer__container-2--pages">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer__container-2--socials">
+        <ul>
+          <li><a href="https://twitter.com/ChukwudobeMicah?t=B0tqHxgwRXjjiQA542dRkg&s=09 "><img
+                src="./styles/assets/icons/facebook.svg" alt="facebook img"></a></li>
+          <li><a href="https://twitter.com/ChukwudobeMicah?t=B0tqHxgwRXjjiQA542dRkg&s=09 "><img
+                src="./styles/assets/icons/twitter.svg" alt="twitter img"></a></li>
+          <li><a href="https://twitter.com/ChukwudobeMicah?t=B0tqHxgwRXjjiQA542dRkg&s=09 "><img
+                src="./styles/assets/icons/instagram.svg" alt="instagram img"></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <script src="scripts/animations.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
