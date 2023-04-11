@@ -15,10 +15,11 @@ nav {
   transform: translateY(100%);
   z-index: 3;
 }
-.hamburger-container {
+.hamburger {
   width: 1.1rem;
   height: 1.1rem;
   background-color: $yellow;
+  // cursor: url(../assets/images/cursor.png) 16 16, auto;
 }
 ul {
   margin-top: 4rem;

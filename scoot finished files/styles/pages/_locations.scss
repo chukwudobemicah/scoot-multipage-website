@@ -75,7 +75,6 @@
 
         article:nth-child(2){
             display:grid;
-            // flex-direction: row;
             grid-template-columns: 1fr 2fr 1fr;
             gap: 2rem;
             text-align: left;

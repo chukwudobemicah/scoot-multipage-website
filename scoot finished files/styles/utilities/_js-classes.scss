@@ -1,3 +1,7 @@
+@use "mixins";
+@use 'variables';
+@forward 'variables';
+
 .translate-left {
   transform: translateX(-100%);
   transition: transform 0.3s ease;
@@ -21,10 +25,9 @@
 .hidden{
   display: none !important;
 }
-@include break-point(min-width, $tablet-sz) {
+@include mixins.break-point(min-width, $tablet-sz) {
   .translate-left {
     transform: translateX(0);
-    // transition: transform 0.3s ease;
   }
 }
 
@@ -33,31 +36,7 @@
   border: 3px double $yellow;
 }
 
-// .translate-up {
-//   transform: translateY(0);
-//   transition: transform 0.5s ease;
-// }
-
-// .mask-element {
-//   transform: translateY(100%);
-//   transition: transform 0.5s ease;
-// }
-// h1, h2 {
-//   transform: translateY(100%);
-//   transition: transform 0.5s ease;
-// }
 .mask-container {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
-
-// @include break-point(min-width, $desktop-sz){
-//   .home-header{
-//     .mask-container {
-//       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-//       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-//       // transform: translate(-90.75px, 0px);
-//       // transform: translateX(-25%) !important;
-//     }
-//   }
-// }

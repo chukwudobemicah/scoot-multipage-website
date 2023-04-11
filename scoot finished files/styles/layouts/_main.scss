@@ -1,4 +1,3 @@
-
 [class*="about__section-2__article-"]{
 [class*="--header"]{
   font-size: 1.5rem;
@@ -16,7 +15,6 @@ article[class*="section-2__article"] {
     text-align: center;
   }
 }
-// article[class*="section-1__article"] {
 article[class*="section-1__article"] {
   > div {
     img {
@@ -127,24 +125,10 @@ article {
 }
 
 @include break-point(min-width, $tablet-sz) {
-  // .section-1 article[class*="section-1__article"] > div,
-  // .section-1 article[class*="section-2__article"] > div {
-  //   background-image: url(./assets/patterns/line.svg);
-  //   background-repeat: no-repeat;
-  //   background-size: 10% 100%;
-  //   background-position: 5% 0%;
-  //   // background-color: blue;
-  //   // bac
-  // }
-
   article[class*="section-1__article"] > div,
   article[class*="section-2__article"] > div {
     max-width: 50%;
-    // margin-bottom: 5rem;
   }
-  // .section-2__article-1--right-arrow-img img {
-  //   height: 2rem;
-  // }
   article[class*="section-1__article"],
   article[class*="section-2__article"] {
     margin-bottom: 5rem;
@@ -161,7 +145,6 @@ article {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 135% 0%;
-    // background-position: 30% 0%;
   }
   main .section-2__article-2--img.arrow-img-container {
     background-position: -65% 0%;
@@ -212,7 +195,6 @@ article {
 }
 
 @include break-point(min-width, $desktop-sz) {
-  // main .section-2 .arrow-img-container > img
   article[class*="section-2__article"] div:last-of-type,
   article.section-1__article-1 {
     margin-left: 7rem;
@@ -220,7 +202,6 @@ article {
   article[class*="section-1__article"] > div,
   article[class*="section-2__article"] > div {
     max-width: 100%;
-    // margin-bottom: 5rem;
   }
 
   .section-1 {
@@ -232,12 +213,6 @@ article {
     background-repeat: no-repeat;
     background-size: 100% 10%;
     background-position: 100% 10%;
-    // article {
-    //   // max-width: 20rem;
-    //   div {
-    //     @include flex(center, column);
-    //   }
-    // }
     .section-1__article-1 {
       margin-top: 0;
     }
@@ -248,12 +223,6 @@ article {
       display: flex !important;
       flex-direction: column !important;
     }
-    // .section-1 article[class*="section-1__article"] > div,
-    // .section-1 article[class*="section-2__article"] > div {
-    //   @include flex(center, column);
-    //   display: flex !important;
-    //   flex-direction: column !important;
-    // }
   }
 
   .section-1 article[class*="section-1__article"] > div,
@@ -266,14 +235,6 @@ article {
   .section-1 article p[class*="--header"] {
     align-self: flex-start;
   }
-
-  // article[class*="section-1__article"],
-  // article[class*="section-2__article"] {
-  //   // display: flex;
-  //   // flex-direction: row;
-  //   // display: grid;
-  //   // grid-template-columns: 1fr 1fr;
-  // }
   main {
     .section-2 .section-2__article-1,
     .section-2 .section-2__article-2,
@@ -282,10 +243,6 @@ article {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
     }
-    // .section-2 .section-2__article-1,
-    // .section-2 .section-2__article-3 {
-    //   grid-column: 2 / 3;
-    // }\
     .section-2 .arrow-img-container:nth-of-type(1),
     .section-2 .arrow-img-container:nth-of-type(3),
     .section-2__article-2 .section-2__article-2__text-content {
@@ -303,12 +260,10 @@ article {
       justify-content: start;
       align-items: start;
       max-width: 60%;
-      // margin-left: 7.5rem;
       text-align: left;
     }
   }
 }
-
 .mask-container{
   margin: 0 !important;
   font-size: initial;

@@ -1,24 +1,25 @@
 // base
-@import "./base/resets";
+@use "./base/resets";
 
 // utilities
-@import "./utilities/functions";
-@import "./utilities/variables";
-@import "./utilities/mixins";
-@import "./utilities/js-classes";
+@use "./utilities/functions";
+@use "./utilities/variables";
+@forward "./utilities/variables";
+@use "./utilities/mixins";
+@use "./utilities/js-classes";
 
 // components
-@import "./components/nav";
-@import "./components/buttons";
-@import "./components/scroll-bar";
+@use "./components/nav";
+@use "./components/buttons";
+@use "./components/scroll-bar";
 
 // layouts
-@import "./layouts/body";
-@import "./layouts/header";
-@import "./layouts/main";
-@import "./layouts/footer";
+@use "./layouts/body";
+@use "./layouts/header";
+@use "./layouts/main";
+@use "./layouts/footer";
 
 // pages
-@import "./pages/about";
-@import "./pages/careers";
-@import "./pages/locations";
+@use "./pages/about";
+@use "./pages/careers";
+@use "./pages/locations";

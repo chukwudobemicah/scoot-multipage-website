@@ -4,7 +4,6 @@ const nav = document.querySelector("nav");
 const body = document.querySelector("body");
 const overlay = document.querySelector(".overlay");
 
-
 hamburgerContainer?.addEventListener("click", function () {
   if (nav.classList.contains("translate-left")) {
     nav.classList.remove("translate-left");
@@ -17,7 +16,6 @@ hamburgerContainer?.addEventListener("click", function () {
   hamburgerContainer.classList.toggle('black-bg');
   overlay.classList.toggle('hidden');
   body.classList.toggle("max-height-100vh");
-//   body.style.max
 });
 
 overlay?.addEventListener('click', function(){
@@ -31,12 +29,40 @@ overlay?.addEventListener('click', function(){
 const chevrons = document.querySelectorAll(".chevron");
 const answers = document.querySelectorAll(".answer");
 const questions = document.querySelectorAll(".question");
+
 // rotate chevrons
 questions?.forEach(question => { question.addEventListener('click', function(){
-
  const chevron = question.querySelector('.chevron');
  chevron.classList.toggle('rotate-down')
  chevron.classList.toggle('rotate-up')
  const closestAnswer = question.nextElementSibling;
  closestAnswer.classList.toggle('hidden')
 })})
+
+// body.addEventListener('mouseover', function () {
+// setTimeout(() => body.style.cursor = 'url(./styles/assets/images/cursor(1).png) 16 16 ,auto', 50)})
+
+body.addEventListener('mouseover', function () {
+  setTimeout(() => {
+    body.style.cursor = 'url(./styles/assets/images/cursor.png) 8 8, auto'
+  }, 100);
+})
+
+const hoverTapCursor = function (element) {
+  element.forEach(el => {
+    el.addEventListener('mouseover', function () {
+      setTimeout(() => {
+        el.style.cursor = 'url(./styles/assets/images/tap.png) 12 12, auto'
+      }, 100);
+    })
+  })
+}
+
+const lists = document.querySelectorAll('li');
+const links = document.querySelectorAll('a');
+const buttons = document.querySelectorAll('button');
+
+hoverTapCursor(lists);
+hoverTapCursor(links);
+hoverTapCursor(buttons);
+

@@ -1,10 +1,6 @@
 header {
   position: relative;
-  // position: relative;
 }
-// .header__container-2 {
-//   position: relative;
-// }
 .header__container-1 {
   @include grid(center, 1fr 2fr, _, start);
   height: 3.5rem;
@@ -24,12 +20,7 @@ header {
   align-items: center;
   text-align: center;
   h1 {
-    // transform: translateX(-25%);
-    // font-size: 1.5rem;
-    // text-align: center;
     margin: 0;
-    // width: fit-content;
-    // max-width: fit-content;
     span {
       white-space: nowrap;
     }
@@ -66,15 +57,7 @@ header button {
   position: absolute;
   bottom: 0;
   left: -80%;
-  // transform: translateY(0%);
 }
-// .header__container-1{
-//   z-index: 4;
-//   position: fixed;
-//   top: 0;
-//   width: 100vw;
-//   background-color: $white;
-// }
 
 @include break-point(min-width, $tablet-sz) {
   .header__container-2 {
@@ -86,17 +69,14 @@ header button {
   }
   .header__right-arrow-img {
     left: -10%;
-    // top: 95%;
     bottom: 3%;
   }
 }
 
 @include break-point(min-width, $desktop-sz) {
   .header__container-2 {
-    // position: relative;
     background: url(./assets/patterns/white-circles.svg),
     url(./assets/images/home-hero-desktop.jpg);
-    // background-size: initial, 100% 100%;
     background-repeat: no-repeat;
     background-position: 95% 95%;
     background-size: 10rem, 100% 100%;
@@ -133,23 +113,7 @@ header button {
   }
   .header__right-arrow-img {
     left: 0%;
-    // top: 95%;
-    // top: %;\
     bottom: 0;
     transform: translateY(15%);
   }
-  // .header__right-arrow-img {
-  //   left: 0;
-  //   top: 50%;
-  //   width: 70%;
-  //   // max-height: 5rem;
-  //   // object-fit: cover;
-  //   // transform: translateY(-50%);
-  //   display: none;
-  //   img {
-  //     min-width: 100%;
-  //     // max-height: 50%;
-  //     // object-fit: cover;
-  //   }
-  // }
 }
